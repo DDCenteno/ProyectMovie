@@ -67,11 +67,13 @@ function getMovies(searchText) {
             $genre = movieS.Genre.toString();
             selector = 'Sci-Fi';
             if ($genre.indexOf(selector) !== -1) {
-              output += `<div class="containerMovie m-3 d-flex flex-column justify-content-center align-items-center">
-         <img src="${movieS.Poster}" alt="" class="imgStyle">
-         <h5 class="nameMovie text-center text-uppercase">${movieS.Title} <a href="#"  class="text-light" id="btnSeeMore" onclick="infoMovie('${movieS.imdbID}')"><i class="fa fa-search-plus" aria-hidden="true"></i></a></h5>
-       </div>
-     `;
+              output += `<div class="containerMovie m-3 d-flex flex-column justify-content-center align-items-center ">
+          <img src="${movieS.Poster}" alt="" class="imgStyle">
+          <h5 class="nameMovie text-center">${movieS.Title}</h5>
+          <a href="#"  class="btn btn-outline-warning bg-dark" id="btnSeeMore" onclick="selectMovie('${movieS.Title}')">See More</a>
+        </div>
+      `; 
+
             }
             $('.hightLight').addClass('hidenNow');
             $('#moviesBox').html(output);
@@ -84,4 +86,11 @@ function getMovies(searchText) {
     .catch((err) => {
       console.log(err);
     });
+
 }
+
+function selectMovie(title) {
+  sessionStorage.setItem('movieTitle', title);
+  window.location = 'views/movie.html';
+}
+
