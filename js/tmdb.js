@@ -19,12 +19,11 @@ function mostPopular() {
       $.each(movie, function () {
         console.log(this);
         if(this.backdrop_path != null){
-        output += `<div class="containerMovie m-3 d-flex flex-column justify-content-center align-items-center ">
+        output += `<div class="containerMovie m-3 d-flex flex-column justify-content-center align-items-center">
           <img src="https://image.tmdb.org/t/p/w500/${this.backdrop_path}" alt="" class="imgStyle" onclick="selectMovie('${this.title}')">
-          <h5 class="nameMovie text-center">${this.title}</h5>')">
-          <h5 class="nameMovie text-center">${this.title}</h5>
+          <h5 class="nameMovie2 text-center text-uppercase">${this.title}</h5>
         </div>
-      `;
+     `;
       };
       });
       $('#mostPopular').html(output);
@@ -41,13 +40,10 @@ function nextReleases() {
         console.log(this);
         output += `<div class="containerMovie2 m-3 d-flex flex-column justify-content-center align-items-center ">
           <img src="https://image.tmdb.org/t/p/w500/${this.backdrop_path}" alt="" class="imgStyle2" onclick="selectMovie('${this.title}')" >
-          <h5 class="nameMovie2 text-center text-uppercase">${this.title}</h5>
+          <h5 class="nameMovie text-center text-uppercase">${this.title}</h5>
         </div>
       `;
       });
       $('#nextReleases').html(output);
     });
 };
-
-
-
