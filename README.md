@@ -1,5 +1,14 @@
 # Sci-Files // Proyecto Hackaton
 ___
+
+Realización de una aplicación donde realiza solo la búsqueda de películas con temática de ciencia ficción.
+
+![image](https://user-images.githubusercontent.com/30356026/36332400-14f8be9c-1340-11e8-9ae5-7fd3b1f320f2.png)
+
+# Desarrollado para
+
+[Laboratoria](http://www.laboratoria.la/)
+___
 ## Día 1: Planificación e investigación
 
 * Planificación del proyecto: Dentro del tema en si sobre la información de videos, ¿A que publico del mundo del cine queremos ir?
@@ -40,7 +49,3 @@ Por el momento se tiene planeado ir por la tematica de las peliculas de heroes y
 * Validación de usuario por Google, registro de correo y contraseña dentro de firebase.
 
 ## Día 4: Preparación, entrega y exposición
-
-
-
-
