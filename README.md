@@ -1,11 +1,11 @@
-# Sci-Files // Proyecto Hackaton
+# Sci-Files
 ___
 
 Realización de una aplicación donde realiza solo la búsqueda de películas con temática de ciencia ficción.
 
 ![image](https://user-images.githubusercontent.com/30356026/36332400-14f8be9c-1340-11e8-9ae5-7fd3b1f320f2.png)
 
-# Desarrollado para
+## Desarrollado para
 
 [Laboratoria](http://www.laboratoria.la/)
 ___
